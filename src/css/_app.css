@@ -1,5 +1,9 @@
-body {
+/* body {
   @apply pt-14 xl:pl-60;
+} */
+
+body {
+  @apply xl:pl-60;
 }
 
 #app {
@@ -17,3 +21,9 @@ body {
 .full-screen body {
   @apply p-0;
 }
+
+@font-face {
+  font-family: 'Nunito';
+  src: local('Nunito'), url(./fonts/Nunito-VariableFont_wght.ttf) format('ttf');
+}
+

@@ -49,7 +49,7 @@ const menuClick = event => {
 </script>
 
 <template>
-  <li>
+  <li class="p-3">
     <component
       :is="componentIs"
       v-slot="vSlot"

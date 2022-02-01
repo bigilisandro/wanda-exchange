@@ -5,6 +5,10 @@ module.exports = {
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Nunito', 'sans-serif'],
+      serif: ['Merriweather', 'serif']
+    },
     extend: {
       zIndex: {
         '-1': '-1'

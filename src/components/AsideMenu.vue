@@ -5,6 +5,7 @@ import { mdiMenu } from '@mdi/js'
 import AsideMenuList from '@/components/AsideMenuList.vue'
 import NavBarItem from '@/components/NavBarItem.vue'
 import Icon from '@/components/Icon.vue'
+import WeLogo from '@/components/WeLogo.vue'
 
 defineProps({
   menu: {
@@ -47,7 +48,7 @@ const menuClick = (event, item) => {
     :class="[ asideStyle, isAsideMobileExpanded ? 'left-0' : '-left-60', isAsideLgActive ? 'block' : 'lg:hidden xl:block' ]"
   >
     <div
-      class="flex flex-row w-full flex-1 h-14 items-center dark:bg-transparent"
+      class="flex flex-row w-full flex-1 h-28 items-center dark:bg-transparent"
       :class="[ asideBrandStyle ]"
     >
       <nav-bar-item
@@ -62,8 +63,8 @@ const menuClick = (event, item) => {
           size="24"
         />
       </nav-bar-item>
-      <div class="flex-1 px-3">
-        <span>Admin</span> <b class="font-black">One</b>
+      <div class="flex-1 px-3 flex justify-center">
+        <we-logo />
       </div>
     </div>
     <div>
